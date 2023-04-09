@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/615137e952.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="whole">
+      <div class="contaier cities">
+        <div class="row">
+          <div class="col"><a href="#">Paris</a></div>
+          <div class="col"><a href="#">New York</a></div>
+          <div class="col"><a href="#">Shanghai</a></div>
+          <div class="col"><a href="#">Tokyo</a></div>
+        </div>
+      </div>
+      <div class="search" id="enter-city">
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <input
+              type="search"
+              class="form-control"
+              id="city-input"
+              placeholder="Enter a city..."
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Search</button>
+        </form>
+      </div>
+
+      <div class="contaier main">
+        <div class="row result">
+          <div class="col-1"><img src="img/snow_light.png" /></div>
+          <div class="col">
+            <h1 id="searched-city">Moscow</h1>
+            <br />
+            <span id="current-time">Sunday</span>
+            <br />
+            <span id="temperature">-2</span>°C
+          </div>
+          <div class="col info">
+            Precipitation: 3% <br />Humidity: 76% <br />Wind: 14 km/h
+          </div>
+        </div>
+      </div>
+      <div class="contaier">
+        <div class="row predict">
+          <div class="col-2 days">
+            Mon <br />
+            <img src="img/cloudy.png" /> <br />
+            -5°-9°
+          </div>
+          <div class="col-2 days">
+            Tue <br />
+            <img src="img/cloudy.png" /><br />
+            -6°-11°
+          </div>
+          <div class="col-2 days">
+            Wed<br />
+            <img src="img/partly_cloudy.png" /><br />
+            -4°-6°
+          </div>
+          <div class="col-2 days">
+            Thu<br />
+            <img src="img/cloudy.png" /><br />
+            -1°-5°
+          </div>
+          <div class="col-2 days">
+            Fri<br />
+            <img src="img/partly_cloudy.png" /><br />
+            -2°-7°
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

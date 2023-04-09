@@ -1,0 +1,60 @@
+body {
+  padding: 50px auto;
+  margin: 100px auto;
+  max-width: 50%;
+}
+.whole {
+  text-align: center;
+  margin-left: 0;
+  box-sizing: initial;
+  border: 2px solid #ecedef;
+  border-radius: 10px;
+}
+div.search {
+  display: block;
+  margin: 0% auto;
+}
+div .predict {
+  margin: 5px auto;
+}
+div.info {
+  color: rgb(142, 142, 142);
+}
+.main {
+  display: block;
+  margin: 40px auto;
+}
+.cities {
+  margin: 30px auto;
+  padding: 10px auto;
+  max-width: 85%;
+}
+h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.days {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+img {
+  margin: 5px auto;
+}
+.predict {
+  max-width: 85%;
+  margin: 0 auto;
+}
+.result {
+  margin: 0 auto;
+  max-width: 70%;
+}
+.form-inline {
+  margin: 0 auto;
+}
+.temperature {
+  font-size: 40px;
+  font-weight: 400;
+}
+form {
+  justify-content: center;
+}
