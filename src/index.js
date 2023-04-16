@@ -24,11 +24,20 @@ console.log(time);
 time.innerHTML = `${day} ${hours}:${minutes}`;
 
 function displayWeatherCondition(response) {
+  console.log(response);
   document.querySelector("#searched-city").innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
-  console.log(temperature);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${temperature}`;
+  let humidity = response.data.main.humidity;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${humidity}`;
+  let wind = Math.round(response.data.wind.speed);
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = `${wind}`;
+  let description = response.data.weather[0].description;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = `${description}`;
 }
 
 function searchCity(event) {
