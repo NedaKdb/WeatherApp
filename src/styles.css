@@ -12,7 +12,7 @@ body {
 }
 div.search {
   display: block;
-  margin: 0% auto;
+  margin: 80px auto 20px auto;
 }
 div .predict {
   margin: 5px auto;
@@ -23,6 +23,7 @@ div.info {
 .main {
   display: block;
   margin: 40px auto;
+  margin-bottom: 80px;
 }
 .cities {
   margin: 30px auto;
@@ -34,15 +35,16 @@ h1 {
   padding: 0 auto;
 }
 .days {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
-img {
-  margin: 5px auto;
-}
+
 .predict {
   max-width: 85%;
-  margin: 0 auto;
+  justify-content: center;
 }
 .result {
   margin: 0 auto;
@@ -51,6 +53,21 @@ img {
 .form-inline {
   margin: 0 auto;
 }
+.btn-primary {
+  background-color: #48484a;
+  border-color: #48484a;
+}
+.btn {
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background-color: #ec6e4c;
+}
+
+.form-inline .form-control {
+  width: 450px;
+}
+
 .temperature {
   font-size: 40px;
   font-weight: 400;
@@ -69,4 +86,14 @@ form {
 
 .weather-forcast-temperature-max {
   font-size: 14px;
+}
+.forcast-icon {
+  display: flex;
+}
+
+.weather-forcast-temperature {
+  text-justify: auto;
+}
+.forcast-icon {
+  width: 60px;
 }
